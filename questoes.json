@@ -1,0 +1,57 @@
+[
+  {
+      "id": 1,
+      "questao": "Qual é a capital do Brasil?",
+      "alternativas": [
+          "São Paulo",
+          "Rio de Janeiro",
+          "Brasília",
+          "Salvador"
+      ],
+      "respostaCorreta": "Brasília"
+  },
+  {
+      "id": 2,
+      "questao": "Qual é o maior planeta do Sistema Solar?",
+      "alternativas": [
+          "Saturno",
+          "Júpiter",
+          "Marte",
+          "Terra"
+      ],
+      "respostaCorreta": "Júpiter"
+  },
+  {
+      "id": 3,
+      "questao": "Quem pintou 'A Noite Estrelada'?",
+      "alternativas": [
+          "Claude Monet",
+          "Pablo Picasso",
+          "Vincent van Gogh",
+          "Leonardo da Vinci"
+      ],
+      "respostaCorreta": "Vincent van Gogh"
+  },
+  {
+      "id": 4,
+      "questao": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "alternativas": [
+          "1969",
+          "1972",
+          "1965",
+          "1959"
+      ],
+      "respostaCorreta": "1969"
+  },
+  {
+      "id": 5,
+      "questao": "Qual é o livro mais vendido no mundo após a Bíblia?",
+      "alternativas": [
+          "O Senhor dos Anéis",
+          "Dom Quixote",
+          "O Pequeno Príncipe",
+          "Harry Potter"
+      ],
+      "respostaCorreta": "Dom Quixote"
+  }
+]
