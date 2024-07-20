@@ -1,25 +1,26 @@
 [
   {
       "id": 1,
-      "questao": "Qual é a capital do Brasil?",
+      "questao": " ENEM 2023 - QUESTÃO 49 ---- TEXTO I Com uma população de 25 milhões de habitantes (cerca de 60% de minorias muçulmanas, principalmente da etnia Uigur), Xinjiang é uma região estratégica para a China. Faz fronteira com oito países, é uma artéria crucial do megaprojeto de infraestrutura chinês Cinturão e Rota e tem as maiores reservas nacionais de carvão e gás natural. // TEXTO II Dentre as províncias da Região Oeste, Xinjiang se destaca ao receber mais de 1,7 milhão de migrantes entre 2000 e 2010. O principal motivo desse fluxo migratório é que o governo fornece subsídios à população visando aumentar a proporção de chineses da etnia Han em relação à população local de etnias turca e muçulmana. A política demográfica para a província mencionada nos textos é parte da seguinte ação estratégica do governo chinês:",
       "alternativas": [
-          "São Paulo",
-          "Rio de Janeiro",
-          "Brasília",
-          "Salvador"
+          "Promover a ocupação rural.",
+          "Favorecer a liberdade religiosa.",
+          "Descentralizar a gestão pública. ",
+          "Incentivar a pluralidade cultural.",
+          "Assegurar a integridade territorial"
       ],
-      "respostaCorreta": "Brasília"
+      "respostaCorreta": "Assegurar a integridade territorial"
   },
   {
       "id": 2,
-      "questao": "Qual é o maior planeta do Sistema Solar?",
+      "questao": "ENEM 2012 - QUESTÃO 32 ---- A interface clima/sociedade pode ser considerada em termos de ajustamento à extensão e aos modos como as sociedades funcionam em uma relação harmônica com seu clima. O homem e suas sociedades são vulneráveis às variações climáticas. A vulnerabilidade é a medida pela qual uma sociedade é suscetível de sofrer por causas climáticas. Considerando o tipo de relação entre ser humano e condição climática apresentado no texto, uma sociedade torna-se mais vulnerável quando:",
       "alternativas": [
-          "Saturno",
+          "Concentra suas atividades no setor primário",
           "Júpiter",
           "Marte",
           "Terra"
       ],
-      "respostaCorreta": "Júpiter"
+      "respostaCorreta": "Concentra suas atividades no setor primário"
   },
   {
       "id": 3,

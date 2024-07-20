@@ -97,20 +97,20 @@
         <br>
     </header>
 
-    <span class="border">
-    <select id="numQuestions" class="btn btn-success" style="margin-top: 100px;">
-        <option value="10">10 questões</option>
-        <option value="20">20 questões</option>
-        <option value="30">30 questões</option>
-        <option value="40">40 questões</option>
-        <option value="50">50 questões</option>
-    </select>
-</span>
-
-<button type="button" class="btn btn-success">Carregar Questões</button>
-
-    <div id="questoes">
+    <div class="container mt-5" style="padding-top: 70px;">
+        <div class="mb-3">
+            <select id="numQuestions" style = "box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);" class="form-select">
+                <option value="10">10 questões</option>
+                <option value="20">20 questões</option>
+                <option value="30">30 questões</option>
+                <option value="40">40 questões</option>
+                <option value="50">50 questões</option>
+            </select>
+        </div>
+        <button class="btn btn-success">Carregar Questões</button>
+        <div id="questoes"></div>
     </div>
+
     <script src="js/QuestionModel.js"></script>
     <script src="js/QuestionView.js"></script>
     <script src="js/QuestionController.js"></script>
