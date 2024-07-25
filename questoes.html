@@ -109,16 +109,28 @@
                 <option value="30">30 questões</option>
                 <option value="40">40 questões</option>
                 <option value="50">50 questões</option>
+                <option value="50">100 questões</option>
             </select>
         </div>
         <button class="btn btn-success">Carregar Questões</button>
         <div id="questoes"></div>
     </div>
+    
+    
+    <button onclick="corrigirQuestoes()">Corrigir Questões</button>
+    
 
+    <div id="quiz">
+      <!-- As questões serão inseridas dinamicamente aqui -->
+    </div>
+ 
     <script src="js/QuestionModel.js"></script>
     <script src="js/QuestionView.js"></script>
     <script src="js/QuestionController.js"></script>
     <script src="js/app.js"></script>
+
+
+    
 </body>
 
 </html>

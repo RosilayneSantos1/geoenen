@@ -1,7 +1,7 @@
 [
   {
       "id": 1,
-      "questao": " ENEM 2023 - QUESTÃO 49 ---- TEXTO I Com uma população de 25 milhões de habitantes (cerca de 60% de minorias muçulmanas, principalmente da etnia Uigur), Xinjiang é uma região estratégica para a China. Faz fronteira com oito países, é uma artéria crucial do megaprojeto de infraestrutura chinês Cinturão e Rota e tem as maiores reservas nacionais de carvão e gás natural. // TEXTO II Dentre as províncias da Região Oeste, Xinjiang se destaca ao receber mais de 1,7 milhão de migrantes entre 2000 e 2010. O principal motivo desse fluxo migratório é que o governo fornece subsídios à população visando aumentar a proporção de chineses da etnia Han em relação à população local de etnias turca e muçulmana. A política demográfica para a província mencionada nos textos é parte da seguinte ação estratégica do governo chinês:",
+      "questao": "(ENEM 2023) - QUESTÃO 49 ---- TEXTO I Com uma população de 25 milhões de habitantes (cerca de 60% de minorias muçulmanas, principalmente da etnia Uigur), Xinjiang é uma região estratégica para a China. Faz fronteira com oito países, é uma artéria crucial do megaprojeto de infraestrutura chinês Cinturão e Rota e tem as maiores reservas nacionais de carvão e gás natural. // TEXTO II Dentre as províncias da Região Oeste, Xinjiang se destaca ao receber mais de 1,7 milhão de migrantes entre 2000 e 2010. O principal motivo desse fluxo migratório é que o governo fornece subsídios à população visando aumentar a proporção de chineses da etnia Han em relação à população local de etnias turca e muçulmana. A política demográfica para a província mencionada nos textos é parte da seguinte ação estratégica do governo chinês:",
       "alternativas": [
           "Promover a ocupação rural.",
           "Favorecer a liberdade religiosa.",
@@ -13,46 +13,783 @@
   },
   {
       "id": 2,
-      "questao": "ENEM 2012 - QUESTÃO 32 ---- A interface clima/sociedade pode ser considerada em termos de ajustamento à extensão e aos modos como as sociedades funcionam em uma relação harmônica com seu clima. O homem e suas sociedades são vulneráveis às variações climáticas. A vulnerabilidade é a medida pela qual uma sociedade é suscetível de sofrer por causas climáticas. Considerando o tipo de relação entre ser humano e condição climática apresentado no texto, uma sociedade torna-se mais vulnerável quando:",
+      "questao": " (ENEM 2012) - QUESTÃO 32 ---- A interface clima/sociedade pode ser considerada em termos de ajustamento à extensão e aos modos como as sociedades funcionam em uma relação harmônica com seu clima. O homem e suas sociedades são vulneráveis às variações climáticas. A vulnerabilidade é a medida pela qual uma sociedade é suscetível de sofrer por causas climáticas. Considerando o tipo de relação entre ser humano e condição climática apresentado no texto, uma sociedade torna-se mais vulnerável quando:",
       "alternativas": [
           "Concentra suas atividades no setor primário",
-          "Júpiter",
-          "Marte",
-          "Terra"
+          "Apresenta estoques elevados de alimentos. ",
+          "Possui um sistema de transportes articulado.",
+          "Diversifica a matriz de geração de energia. ",
+          "Introduz tecnologias à produção agrícola."
       ],
       "respostaCorreta": "Concentra suas atividades no setor primário"
   },
   {
       "id": 3,
-      "questao": "Quem pintou 'A Noite Estrelada'?",
+      "questao": " (ENEM 2023) - QUESTÃO 48 ---- No Cerrado, o conhecimento local está sendo cada vez mais subordinado à lógica do agronegócio. De um lado, o capital impõe os conhecimentos biotecnológicos, como mecanismo de universalização de práticas agrícolas e de novas tecnologias, e de outro, o modelo capitalista subordina homens e mulheres à lógica do mercado. Assim, as águas, as sementes, os minerais, as terras (bens comuns) tornam-se propriedade privada. Além do mais, há outros fatores negativos, como a mecanização pesada, a “pragatização” dos seres humanos e não humanos, a violência simbólica, a superexploração, as chuvas de veneno e a violência contra a pessoa. Os elementos descritos no texto, a respeito da territorialização da produção, demonstram que há um:      ",
       "alternativas": [
-          "Claude Monet",
-          "Pablo Picasso",
-          "Vincent van Gogh",
-          "Leonardo da Vinci"
+          "Cerco aos camponeses, inviabilizando a manutenção das condições para a vida.",
+          "Descaso aos latifundiários, impactando a plantação de alimentos para a exportação.",
+          "Desprezo ao assalariado, afetando o engajamento dos sindicatos para o trabalhador.",
+          "Desrespeito aos governantes, comprometendo a criação de empregos para o lavrador.",
+          "Assédio ao empresariado, dificultando o investimento de maquinários para a produção."
       ],
-      "respostaCorreta": "Vincent van Gogh"
+      "respostaCorreta": "Cerco aos camponeses, inviabilizando a manutenção das condições para a vida."
   },
   {
       "id": 4,
-      "questao": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "questao": "(ENEM 2023) - QUESTÃO 51 ---- Escrito durante a Primeira Guerra Mundial, o seguinte trecho faz parte da carta enviada pelo secretário do exterior britânico, Sir Arthur James Balfour, ao banqueiro Lord Rotschild, presidente da Liga Sionista, em 2 de novembro de 1917, a carta ficou conhecida como Declaração Balfour: “O governo de Sua Majestade vê com aprovação o estabelecimento na Palestina de um lar nacional para o povo judeu, e fará todos os esforços para facilitar tal objetivo. Nada será feito que possa prejudicar os direitos civis e religiosos das comunidades não judaicas na Palestina.”  GATTAZ, A. A Guerra da Palestina. São Paulo: Usina do Livro, 2002 (adaptado). A análise do resultado do processo em questão revela que o governo inglês foi incapaz de garantir seu objetivo de ",
       "alternativas": [
-          "1969",
-          "1972",
-          "1965",
-          "1959"
+          "Promover o bem-estar social.",
+          "Negociar o apoio muçulmano.",
+          "Mediar os conflitos territoriais. ",
+          "Estimular a cooperação regional. ",
+          "Combater os governos autocráticos."
       ],
-      "respostaCorreta": "1969"
+      "respostaCorreta": "Mediar os conflitos territoriais."
   },
   {
       "id": 5,
-      "questao": "Qual é o livro mais vendido no mundo após a Bíblia?",
-      "alternativas": [
-          "O Senhor dos Anéis",
-          "Dom Quixote",
-          "O Pequeno Príncipe",
-          "Harry Potter"
+      "questao": " (ENEM 2015) - QUESTÃO 01 ---- Ninguém nasce mulher: torna-se mulher. Nenhum destino biológico, psíquico, econômico define a forma que a fêmea humana assume no seio da sociedade; é o conjunto da civilização que elabora esse produto intermediário entre o macho e o castrado que qualificam o feminino. BEAUVOIR, S. O segundo sexo. Rio de Janeiro: Nova Fronteira, 1980. Na década de 1960, a proposição de Simone de Beauvoir contribuiu para estruturar um movimento social que teve como marca o(a)",
+     "alternativas": [
+          "Ação do Poder Judiciário para criminalizar a violência sexual. ",
+          "Pressão do Poder Legislativo para impedir a dupla jornada de trabalho.",
+          "Organização de protestos públicos para garantir a igualdade de gênero.",
+          "Oposição de grupos religiosos para impedir os casamentos homoafetivos.",
+          "Estabelecimento de políticas governamentais para promover ações afirmativas. "
       ],
-      "respostaCorreta": "Dom Quixote"
-  }
+      "respostaCorreta": "Organização de protestos públicos para garantir a igualdade de gênero."
+  },
+  {
+    "id": 6,
+    "questao": " (ENEM 2015) - QUESTÃO 06 ---- O processo de concentração urbana no Brasil em determinados locais teve momentos de maior intensidade e, ao que tudo indica, atualmente passa por uma desaceleração no ritmo de crescimento populacional nos grandes centros urbanos. BAENINGER, R. Cidades e metrópoles: a desaceleração no crescimento populacional e novos arranjos regionais. Disponível em: www.sbsociologia.com.br. Acesso em: 12 dez. 2012 (adaptado). Uma causa para o processo socioespacial mencionado no texto é o(a) ",
+   "alternativas": [
+        "Carência de matérias-primas.",
+        "Degradação da rede rodoviária. ",
+        "Aumento do crescimento vegetativo.",
+        "Centralização do poder político.",
+        "Realocação da atividade industrial"
+    ],
+    "respostaCorreta": "Realocação da atividade industrial"
+},
+{
+    "id": 7,
+    "questao": "(ENEM 2015) - QUESTÃO 17 ---- Algumas regiões do Brasil passam por uma crise de água por causa da seca. Mas, uma região de Minas Gerais está enfrentando a falta de água no campo tanto em tempo de chuva como na seca. As veredas estão secando no norte e no noroeste mineiro. Ano após ano, elas vêm perdendo a capacidade de ser a caixa-d’água do grande sertão de Minas.(VIEIRA, C. Degradação do solo causa perda de fontes de água de famílias de MG. Disponível em: http://g1.globo.com. Acesso em: 1 nov. 2014. As veredas têm um papel fundamental no equilíbrio hidrológico dos cursos de água no ambiente do Cerrado, pois ",
+   "alternativas": [
+        "Colaboram para a formação de vegetação xerófila.",
+        "Formam os leques aluviais nas planícies das bacias. ",
+        "Fornecem sumidouro para as águas de recarga da bacia.",
+        "Contribuem para o aprofundamento dos talvegues à jusante.",
+        "Constituem um sistema represador da água na chapada."
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 8,
+    "questao": "(ENEM 2019) Uma política pública voltada para a preservação dos recursos hídricos deve considerar as interações entre os diferentes usos da água, como o consumo humano, a produção de alimentos e a geração de energia. Essa abordagem se justifica pelo fato de:",
+   "alternativas": [
+        "As demandas por água são uniformes em todas as regiões do país.",
+        "O acesso à água ser um direito exclusivo das populações rurais.",
+        "O ciclo hidrológico não ser afetado pelas atividades humanas.",
+        "A disponibilidade de água ser variável e distribuída de forma desigual.",
+        "A poluição dos recursos hídricos não interferir na qualidade da água consumida. "
+    ],
+    "respostaCorreta": "A disponibilidade de água ser variável e distribuída de forma desigual."
+},
+{
+    "id": 9,
+    "questao": "(ENEM 2020) A fragmentação territorial dos Estados, característica da geopolítica atual, manifesta-se na criação de novos espaços de poder. Esse fenômeno, associado à formação de blocos econômicos e políticos, intensifica-se pela:    ",
+   "alternativas": [
+        "Desvalorização da comunicação digital.",
+        "Ampliação da mobilidade social.",
+        "Expansão do consumo local.",
+        "Regionalização dos fluxos econômicos.",
+        "Diminuição dos fluxos migratórios."
+    ],
+    "respostaCorreta": "Regionalização dos fluxos econômicos."
+},
+{
+    "id": 10,
+    "questao": "(ENEM 2018) A migração de refugiados tem se intensificado nas últimas décadas, e políticas migratórias humanitárias vêm sendo discutidas por diversos países. Uma das medidas adotadas por países de acolhimento é:",
+   "alternativas": [
+        "O fechamento das fronteiras para evitar a formação de guetos.",
+        "A oferta de empregos apenas a refugiados qualificados.",
+        "O aumento de restrições à concessão de asilo político.",
+        "A promoção de políticas de integração social e econômica. ",
+        "A criação de cotas de deportação para refugiados."
+    ],
+    "respostaCorreta": "A promoção de políticas de integração social e econômica."
+},
+{
+    "id": 11,
+    "questao": "(ENEM 2017) A urbanização é um fenômeno mundial que apresenta aspectos comuns e peculiaridades em diferentes regiões. Um aspecto comum observado em várias cidades brasileiras é:    ",
+   "alternativas": [
+        "O crescimento das áreas verdes no entorno urbano.",
+        "A redução dos problemas relacionados ao trânsito.",
+        "O aumento da concentração populacional em áreas periféricas. ",
+        "A diminuição da importância dos serviços coletivos. ",
+        "A restrição ao uso das novas tecnologias de informação."
+    ],
+    "respostaCorreta": "O aumento da concentração populacional em áreas periféricas. "
+},
+{
+    "id": 12,
+    "questao": "(ENEM 2016) A taxa de fecundidade no Brasil apresentou uma tendência de queda nas últimas décadas, sendo que essa diminuição:",
+   "alternativas": [
+        "Implica redução da mortalidade infantil.",
+        "Provoca aumento da população economicamente ativa.",
+        "Está associada à diminuição da esperança de vida.",
+        "Reflete mudanças nos padrões culturais e socioeconômicos. ",
+        "Resulta na expansão das áreas rurais."
+    ],
+    "respostaCorreta": "Reflete mudanças nos padrões culturais e socioeconômicos. "
+},
+{
+    "id": 13,
+    "questao": "(ENEM 2021) A globalização, intensificada a partir do final do século XX, alterou significativamente as relações econômicas e culturais entre os países. Uma consequência direta desse processo é:",
+   "alternativas": [
+        "A redução das barreiras alfandegárias e o fortalecimento do protecionismo econômico.",
+        "O enfraquecimento das redes de comunicação e o isolamento digital.",
+        "A preservação das identidades culturais locais e a diminuição da diversidade linguística.",
+        "A promoção do acesso restrito à informação e ao conhecimento.",
+        "O aumento da interdependência entre os mercados financeiros internacionais. "
+    ],
+    "respostaCorreta": "O aumento da interdependência entre os mercados financeiros internacionais."
+},
+{
+    "id": 14,
+    "questao": "(ENEM 2019) A agropecuária brasileira, ao longo das últimas décadas, passou por transformações significativas que impactam tanto a economia quanto o meio ambiente. Uma dessas transformações é:",
+   "alternativas": [
+        "O aumento da fragmentação fundiária e a diminuição do uso de agrotóxicos.",
+        "A expansão da monocultura e a preservação da biodiversidade.",
+        "A intensificação do uso de técnicas tradicionais e a redução do êxodo rural.",
+        "O crescimento da agricultura familiar e o aumento das áreas de desmatamento.",
+        "A implementação de políticas públicas voltadas para a conservação dos recursos hídricos."
+    ],
+    "respostaCorreta": "O crescimento da agricultura familiar e o aumento das áreas de desmatamento."
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+},
+{
+    "id": 6,
+    "questao": "",
+   "alternativas": [
+        " ",
+        "",
+        "",
+        "",
+        " "
+    ],
+    "respostaCorreta": ""
+}
 ]
+
