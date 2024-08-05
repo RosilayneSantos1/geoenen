@@ -28,6 +28,9 @@ class QuestionView {
           input.name = `question-${index + 1}`;
           input.className = "form-check-input me-2"; // Bootstrap form check
           input.value = alt;
+          if (alt === question.respostaCorreta){
+            label.className = "resposta-correta";
+          }
           label.appendChild(input);
           label.append(alt);
           li.appendChild(label);

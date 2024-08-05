@@ -28,5 +28,11 @@ class QuestionController {
       }
     });
     alert(`Você acertou ${correctCount} de ${questions.length} questões.`);
+
+    const labels = document.querySelectorAll(".resposta-correta");
+    labels.forEach(label => {
+      label.style.color = "green";
+    })
   }
+  
 }
