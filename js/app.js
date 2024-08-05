@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const view = new QuestionView('questoes');
   const controller = new QuestionController(model, view);
 
-  document.querySelector('button').addEventListener('click', () => controller.loadQuestions());
+  document.querySelector('#carregarQuestoes').addEventListener('click', () => controller.loadQuestions());
   document.getElementById('numQuestions').addEventListener('change', (e) => {
       view.questionsPerPage = parseInt(e.target.value);
-      controller.loadQuestions();
+      viewl.container.innerHTML = '';
   });
+
+  document.getElementById('corrigirQuestoes').addEventListener('click', () => controller.correctQuestions());
 });

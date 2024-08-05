@@ -1,33 +1,32 @@
 class QuestionController {
   constructor(model, view) {
-      this.model = model;
-      this.view = view;
+    this.model = model;
+    this.view = view;
   }
 
   loadQuestions() {
-      this.model.fetchQuestions()
-          .then(questions => {
-              window.globalQuestions = questions; // Armazena globalmente para paginação
-              this.view.displayQuestions(questions);
-          })
-          .catch(() => this.view.showError('Erro ao carregar as questões. Verifique o console para mais detalhes.'));
+    this.model
+      .fetchQuestions()
+      .then((questions) => {
+        window.globalQuestions = questions.slice(0, this.view.questionsPerPage); // Armazena apenas o número de questões selecionadas
+        this.view.displayQuestions(window.globalQuestions);
+      })
+      .catch(() =>
+        this.view.showError(
+          "Erro ao carregar as questões. Verifique o console para mais detalhes."
+        )
+      );
+  }
+
+  correctQuestions() {
+    const questions = window.globalQuestions;
+    let correctCount = 0;
+    questions.forEach((question, index) => {
+      const selectedOption = document.querySelector(`input[name="question-${index + 1}"]:checked`);
+      if (selectedOption && selectedOption.value === question.respostaCorreta) {
+        correctCount++;
+      }
+    });
+    alert(`Você acertou ${correctCount} de ${questions.length} questões.`);
   }
 }
-function corrigirQuestao(idQuestao, respostaUsuario) {
-    const questao = questionsDB.questions.find(q => q.id === idQuestao);
-    
-    if (!questao) {
-      return "Questão não encontrada";
-    }
-    
-    if (respostaUsuario.trim().toLowerCase() === questao.correctAnswer.toLowerCase()) {
-      return "Resposta correta!";
-    } else {
-      return "Resposta incorreta. A resposta correta é: " + questao.correctAnswer;
-    }
-  }
-  
-  // Exemplo de uso
-  console.log(corrigirQuestao(1, "Assegurar a integridade territorial")); // Saída esperada: "Resposta correta!"
-  console.log(corrigirQuestao(2, "Cristóvão Colombo")); // Saída esperada: "Resposta incorreta. A resposta correta é: Pedro Álvares Cabral"
-  console.log(corrigirQuestao(3, "Rio de Janeiro")); // Saída esperada: "Questão não encontrada"
