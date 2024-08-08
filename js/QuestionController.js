@@ -27,6 +27,7 @@ class QuestionController {
         correctCount++;
       }
     });
+  
     alert(`Você acertou ${correctCount} de ${questions.length} questões.`);
 
     const labels = document.querySelectorAll(".resposta-correta");
