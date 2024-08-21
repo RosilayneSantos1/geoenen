@@ -5,6 +5,8 @@ class QuestionController {
   }
 
   loadQuestions() {
+    const respostas = document.getElementById("respostasId");
+    respostas.innerHTML = ``;
     this.model
       .fetchQuestions()
       .then((questions) => {
@@ -28,11 +30,18 @@ class QuestionController {
       }
     });
   
-    alert(`Você acertou ${correctCount} de ${questions.length} questões.`);
+    //alert(`Você acertou ${correctCount} de ${questions.length} questões.`);  
+
+    const respostas = document.getElementById("respostasId");
+    respostas.innerHTML = `<div class="alert alert-success" role="alert">                            
+                            <div>Você acertou ${correctCount} de ${questions.length} questões.</div>
+                          </div>`;
+ 
 
     const labels = document.querySelectorAll(".resposta-correta");
     labels.forEach(label => {
       label.style.color = "green";
+      label.style.fontWeight = "bold";
     })
   }
   
