@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Vídeo Aulas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+.channel-sidebar {
+  position: fixed;
+  top: 10%; /* Ajuste a posição vertical mais para cima */
+  right: 0;
+  width: 220px;
+  height: 60vh; /* Altura proporcional à tela */
+  background: #ffffff;
+  border-left: 2px solid #e0e0e0;
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 12px;
+  font-family: 'Arial', sans-serif;
+}
+
+.channel-sidebar .sidebar-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 8px;
+}
+
+.channel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.channel-list li {
+  margin-bottom: 0.6rem;
+}
+
+.channel-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  display: block;
+  transition: color 0.3s, background-color 0.3s, padding-left 0.3s;
+  padding: 8px;
+  border-radius: 8px;
+  border-left: 4px solid transparent;
+}
+
+.channel-list a:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  padding-left: 12px;
+  border-left: 4px solid #007bff;
+}
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    .sidebar-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #444;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .category-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .category-item {
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1.1rem;
+      margin: 10px;
+    }
+
+    .category-item:hover {
+      background-color: #e9ecef;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .category-item i {
+      font-size: 1.6rem;
+      margin-right: 15px;
+      color: #28a745;
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .video-item {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .video-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-item video {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .video-item p {
+      padding: 15px;
+      text-align: center;
+      margin: 0;
+      background: #f4f4f4;
+      font-size: 1rem;
+      color: #555;
+    }
+    #backButton {
+  display: none; /* Inicialmente escondido, será exibido quando um assunto for selecionado */
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 12px; /* Aumenta o arredondamento para um visual mais moderno */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-size: 1.1rem; /* Aumenta um pouco o tamanho da fonte para melhor legibilidade */
+  position: fixed;
+  bottom: 20px; /* Alinha o botão ao fundo da tela */
+  right: 20px; /* Alinha o botão ao lado direito da tela */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para um visual mais bonito */
+  z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+
+#backButton:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Aumenta o botão um pouco no hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra no hover */
+  border: 1px solid #1e7e34; /* Adiciona uma borda sutil para um efeito mais sofisticado */
+}
+    #categoryList.hidden {
+      display: none;
+    }
+    .footer {
+    background: #f8f9fa; /* Ajuste a cor de fundo conforme necessário */
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d; /* Ajuste a cor do texto conforme necessário */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><a href="index.html">GeoEnem</a></h1>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+              <li><a class="nav-link scrollto active" href="#videos">Vídeo Aulas</a></li>
+              <li class="dropdown"><a href="#"><span>Pratique</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="questoes.html" target="_blank">Provas Online</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Conteúdos</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="meio_ambiente.html">Meio Ambiente</a></li>
+                  <li><a href="geopolitica.html">Geopolítica</a></li>
+                  <li><a href="imigracao.html">Imigração</a></li>
+                  <li><a href="urbanizacao.html">Urbanização</a></li>
+                  <li><a href="populacao.html">População</a></li>
+                  <li><a href="globalizacao.html">Globalização</a></li>
+                  <li><a href="agropecuaria.html">Agropecuária</a></li>
+                  <li><a href="hidrografia.html">Hidrografia</a></li>
+                  <li><a href="climatologia.html">Climatologia</a></li>
+                  <li><a href="comercio.html">Comércio</a></li>
+                  <li><a href="geografia_fisica.html">Geografia Física</a></li>
+                </ul>
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+<!-- Channel Links Sidebar -->
+<aside class="channel-sidebar">
+  <h3 class="sidebar-title">Canais usados</h3>
+  <ul class="channel-list">
+    <li><a href="https://youtube.com/@stoodibr?si=riv4xLYMCGiWe8WS" target="_blank">Stoodi</a></li>
+    <li><a href="https://youtube.com/@quadrolivre?si=aTo6Bu1B5t_JLkB2" target="_blank">Quadro livre</a></li>
+    <li><a href="https://youtube.com/@cursoenemgratuito?si=aq0Im1BG7d9i8ivu" target="_blank">Curso Enem Gratuito</a></li>
+    <li><a href="https://youtube.com/@brasilescola?si=1POHBlOVyv1SoMfb" target="_blank">Brasil Escola Oficial</a></li>
+    <li><a href="https://youtube.com/@gabaritageo?si=PrxDM3O9103Oo4KW" target="_blank">Prof.JeanGrafia</a></li>
+    <li><a href="https://youtube.com/@descomplica?si=95UnnCRlCCqSG5zx" target="_blank">Descomplica</a></li>
+    <li><a href="https://youtube.com/@geobrasil?si=5BbpMWm5t8pbhfVg" target="_blank">Geobrasil</a></li>
+    <li><a href="https://youtube.com/channel/UCOcQJrvI5Atjc0kQzWCDYag?si=CjQcRvx8istgem91" target="_blank">Entrando na História</a></li>
+    <li><a href="https://youtube.com/channel/UCT6Imb3GXhF8GmjpIk6y2lg?si=pbFF24IuWWk88EiX" target="_blank">Professor Ricardo Marcílio</a></li>
+   
+  </ul>
+</aside>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Breadcrumbs -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Vídeo Aulas</li>
+        </ol>
+        <h2>Vídeo Aulas</h2>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- Video Section -->
+    <section id="videos" class="videos">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 entries text-center">
+            <!-- Categories List -->
+            <div id="categoryList">
+              <h3 class="sidebar-title">Escolha um Assunto</h3>
+              <ul class="category-list">
+                <li class="category-item" data-category="agropecuaria">
+                  <i class="bi bi-tree"></i> Agropecuária
+                </li>
+                <li class="category-item" data-category="climatologia">
+                  <i class="bi bi-cloud-sun"></i> Climatologia
+                </li>
+                <li class="category-item" data-category="comercio">
+                  <i class="bi bi-cart"></i> Comércio
+                </li>
+                <li class="category-item" data-category="geografia_fisica">
+                  <i class="bi bi-geo-alt"></i> Geografia Física
+                </li>
+                <li class="category-item" data-category="geopolitica">
+                  <i class="bi bi-globe"></i> Geopolítica
+                </li>
+                <li class="category-item" data-category="globalizacao">
+                  <i class="bi bi-globe-americas"></i> Globalização
+                </li>
+                <li class="category-item" data-category="hidrografia">
+                  <i class="bi bi-droplet"></i> Hidrografia
+                </li>
+                <li class="category-item" data-category="imigracao">
+                  <i class="bi bi-person-lines-fill"></i> Imigração
+                </li>
+                <li class="category-item" data-category="populacao">
+                  <i class="bi bi-people"></i> População
+                </li>
+                <li class="category-item" data-category="urbanizacao">
+                  <i class="bi bi-house-door"></i> Urbanização
+                </li>
+                <li class="category-item" data-category="meio_ambiente">
+                  <i class="bi bi-leaf"></i> Meio Ambiente
+                </li>
+              </ul>
+            </div>
+
+            <!-- Videos Container -->
+            <div id="videoContainer" class="video-container">
+              <!-- Vídeos serão carregados aqui via JavaScript -->
+            </div>
+
+            <!-- Back Button -->
+            <button id="backButton">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Videos Section -->
+
+  </main><!-- End #main -->
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>GeoEnem</h3>
+            <p>é a plataforma completa para estudar e se preparar para o ENEM com foco em geografia. 
+              Oferecemos uma ampla gama de materiais, incluindo questões para praticar, textos explicativos e vídeo aulas detalhadas. 
+              Navegue por nossos recursos para aprofundar seu conhecimento e garantir um desempenho excelente na prova.</p>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Links Úteis</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Início</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre Nós</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Serviços</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Termos de Serviço</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Política de Privacidade</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contato</h4>
+            <p>
+              Rua Adam, 108 <br>
+              Nova York, NY 535022<br>
+              Estados Unidos <br>
+              <strong>Telefone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@exemplo.com<br>
+            </p>
+  
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Nosso Boletim</h4>
+            <p>Inscreva-se em nosso boletim informativo para receber atualizações e notícias.</p>
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Seu email"><input type="submit" value="Inscrever-se">
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 <strong>BizPage</strong>. Todos os Direitos Reservados
+      </div>
+      <div class="credits">
+        <!--
+        Todos os links no rodapé devem permanecer intactos.
+        Você pode excluir os links somente se adquiriu a versão pro.
+        Informações de licenciamento: https://bootstrapmade.com/license/
+        Adquira a versão pro com formulário de contato PHP/AJAX funcionando: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+        Desenvolvido por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  <script>
+    const videoData = {
+      agropecuaria: [
+        { src: "assets/videos/AGROPECUARIA/AGROPECUARIA (1).mp4", title: "Agropecuária 1" },
+        { src: "assets/videos/AGROPECUARIA/AGROPECUARIA (2).mp4", title: "Agropecuária 2" },
+        { src: "assets/videos/AGROPECUARIA/AGROPECUARIA 3 (1).mp4", title: "Agropecuária 3" },
+        { src: "assets/videos/AGROPECUARIA/AGROPECUARIA 3 (2).mp4", title: "Agropecuária 4" }
+      ],
+      climatologia: [
+        { src: "assets/videos/CLIMATOLOGIA/CLIMATOLOGIA (1).mp4", title: "Climatologia 1" },
+        { src: "assets/videos/CLIMATOLOGIA/CLIMATOLOGIA (2).mp4", title: "Climatologia 2" },
+        { src: "assets/videos/CLIMATOLOGIA/CLIMATOLOGIA 3 (1).mp4", title: "Climatologia 3" },
+        { src: "assets/videos/CLIMATOLOGIA/CLIMATOLOGIA 3 (2).mp4", title: "Climatologia 4" }
+      ],
+      comercio: [
+        { src: "assets/videos/COMERCIO/COMERCIO (1).mp4", title: "Comércio 1" },
+        { src: "assets/videos/COMERCIO/COMERCIO (2).mp4", title: "Comércio 2" },
+        { src: "assets/videos/COMERCIO/COMERCIO 3 (1).mp4", title: "Comércio 3" },
+        { src: "assets/videos/COMERCIO/COMERCIO 3 (2).mp4", title: "Comércio 4" }
+      ],
+      geografia_fisica: [
+        { src: "assets/videos/GEOGRAFIA-FISICA/GEOGRAFIAFISICA 1.mp4", title: "Geografia Física 1" },
+        { src: "assets/videos/GEOGRAFIA-FISICA/GEOGRAFIAFISICA2.mp4", title: "Geografia Física 2" },
+        { src: "assets/videos/GEOGRAFIA-FISICA/GEOGRAFIAFISICA 3 (1).mp4", title: "Geografia Física 3" },
+        { src: "assets/videos/GEOGRAFIA-FISICA/GEOGRAFIAFISICA 3 (2).mp4", title: "Geografia Física 4" }
+      ],
+      geopolitica: [
+        { src: "assets/videos/GEOPOLITICA/GEOPOLITICA1 (1).mp4", title: "Geopolítica 1" },
+        { src: "assets/videos/GEOPOLITICA/GEOPOLITICA1 (2).mp4", title: "Geopolítica 2" },
+        { src: "assets/videos/GEOPOLITICA/GEOPOLITICA 3 (1).mp4", title: "Geopolítica 3" },
+        { src: "assets/videos/GEOPOLITICA/GEOPOLITICA4.mp4", title: "Geopolítica 4" }
+      ],
+      globalizacao: [
+        { src: "assets/videos/GLOBALIZAÇAO/GLOBALIZAÇAO (1).mp4", title: "Globalização 1" },
+        { src: "assets/videos/GLOBALIZAÇAO/GLOBALIZAÇAO (2).mp4", title: "Globalização 2" },
+        { src: "assets/videos/GLOBALIZAÇAO/GLOBALIZAÇAO3 (1).mp4", title: "Globalização 3" },
+        { src: "passets/videos/GLOBALIZAÇAO/GLOBALIZAÇAO3 (2).mp4", title: "Globalização 4" }
+      ],
+      hidrografia: [
+        { src: "assets/videos/HIDROGRAFIA/HIDROGRAFIA (1).mp4", title: "Hidrografia 1" },
+        { src: "assets/videos/HIDROGRAFIA/HIDROGRAFIA (2).mp4", title: "Hidrografia 2" },
+        { src: "assets/videos/HIDROGRAFIA/HIDROGRAFIA 3 (1).mp4", title: "Hidrografia 3" },
+        { src: "assets/videos/HIDROGRAFIA/HIDROGRAFIA 3 (2).mp4", title: "Hidrografia 4" }
+      ],
+      imigracao: [
+        { src: "assets/videos/IMIGRAÇAO/IMIGRAÇÃO (1).mp4", title: "Imigração 1" },
+        { src: "assets/videos/IMIGRAÇAO/IMIGRAÇÃO (2).mp4", title: "Imigração 2" },
+        { src: "assets/videos/IMIGRAÇAO/IMIGRAÇAO 3 (1).mp4", title: "Imigração 3" },
+        { src: "assets/videos/IMIGRAÇAO/IMIGRAÇAO 3 (2).mp4", title: "Imigração 4" }
+      ],
+      populacao: [
+        { src: "assets/videos/POPULAÇAO/POPULAÇAO (1).mp4", title: "População 1" },
+        { src: "assets/videos/POPULAÇAO/POPULAÇAO (2).mp4", title: "População 2" },
+        { src: "assets/videos/POPULAÇAO/POPULAÇAO 3 (1).mp4", title: "População 3" },
+        { src: "assets/videos/POPULAÇAO/POPULAÇAO 3 (2).mp4", title: "População 4" }
+      ],
+      urbanizacao: [
+        { src: "assets/videos/URBANIZAÇAO/URBANIZAÇAO (1).mp4", title: "Urbanização 1" },
+        { src: "assets/videos/URBANIZAÇAO/URBANIZAÇAO (2).mp4", title: "Urbanização 2" },
+        { src: "assets/videos/URBANIZAÇAO/URBANIZAÇAO 3 (1).mp4", title: "Urbanização 3" },
+        { src: "assets/videos/URBANIZAÇAO/URBANIZAÇAO 3 (2).mp4", title: "Urbanização 4" }
+      ],
+      meio_ambiente: [
+        { src: "assets/videos/MEIO AMBIENTE/MEIO AMBIENTE (1).mp4", title: "Meio Ambiente 1" },
+        { src: "assets/videos/MEIO AMBIENTE/MEIO AMBIENTE (2).mp4", title: "Meio Ambiente 2" },
+        { src: "assets/videos/MEIO AMBIENTE/MEIO AMBIENTE 3 (1).mp4", title: "Meio Ambiente 3" },
+        { src: "assets/videos/MEIO AMBIENTE/MEIO AMBIENTE 3 (2).mp4", title: "Meio Ambiente 4" }
+      ]
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const categoryItems = document.querySelectorAll('.category-item');
+      const videoContainer = document.getElementById('videoContainer');
+      const backButton = document.getElementById('backButton');
+      const categoryList = document.getElementById('categoryList');
+
+      categoryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const category = item.getAttribute('data-category');
+          videoContainer.innerHTML = '';
+
+          if (videoData[category]) {
+            videoData[category].forEach(video => {
+              const videoElement = document.createElement('div');
+              videoElement.classList.add('video-item');
+              videoElement.innerHTML = `
+                <video src="${video.src}" controls></video>
+                <p>${video.title}</p>
+              `;
+              videoContainer.appendChild(videoElement);
+            });
+          }
+
+          // Oculta a lista de categorias e mostra o botão de voltar
+          categoryList.classList.add('hidden');
+          backButton.style.display = 'block';
+        });
+      });
+
+      backButton.addEventListener('click', () => {
+        videoContainer.innerHTML = '';
+        categoryList.classList.remove('hidden');
+        backButton.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
